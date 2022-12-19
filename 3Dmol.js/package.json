@@ -1,0 +1,31 @@
+{
+    "author": "David Koes and contributors",
+    "dependencies": {
+        "ini": "^2.0.0",
+        "yargs-parser": "^20.2.9"
+    },
+    "description": "Object oriented Javascript molecular visualization library",
+    "devDependencies": {
+        "glcheck": "3dmol/glcheck#master"
+    },
+    "homepage": "http://3dmol.csb.pitt.edu",
+    "license": "BSD-3-Clause",
+    "name": "3dmol",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dkoes/3Dmol.js.git"
+    },
+    "scripts": {
+        "build": "npm run build --workspaces",
+        "coverage": "npm run coverage --workspaces",
+        "doc": "npm run doc --workspaces",
+        "glcheck": "npm run glcheck --workspaces",
+        "jest": "npm run jest --workspaces",
+        "prepare": "npm run build",
+        "test": "npm run test --workspaces"
+    },
+    "version": "1.8.0",
+    "workspaces": [
+        "./packages/*"
+    ]
+}
